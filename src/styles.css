@@ -105,7 +105,7 @@ main {
 }
 
 .header-link {
-  color: orangered;
+  color: #F42;
 }
 
 .latest-news-list {
@@ -126,7 +126,13 @@ main {
   background-color: black;
   overflow: hidden;
 }
-
+.topics-container{
+    padding: 0.5rem 0.65rem;
+}
+.topic a h2{
+    color: #f42;
+    margin: 0.8rem 0;
+}
 .topic-1 {
   background-image: url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
 }
@@ -161,4 +167,44 @@ main {
 
 .topic-9 {
   background-image: url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
+}
+.special-item{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #FFF4F2;
+    color: #F42;
+    margin-bottom: 0.7rem;
+}
+.special-item header{
+    padding: 0.5rem 0.7rem;
+}
+.special-item img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+.special-item h4{
+    font-weight: 500;
+}
+.special-item a{
+    color: #F42;
+    font-weight: 600;
+}
+.normal-link{
+    padding: 0.2rem 0.3rem;
+}
+.normal-link::marker{
+    content: "•";
+    color: #f42;
+} 
+.normal-link a{
+    font-size: 0.9rem;
+    color: #333;
+}
+.top-footer{
+    background-color:#131313
+    ;
+}
+.bottom-footer{
+    background-color: black;
 }
