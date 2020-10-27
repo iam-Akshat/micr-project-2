@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: white;
+
+a {
+  text-decoration: none;
+  color: white;
 }
+
 .logo {
   display: grid;
   justify-items: center;
@@ -44,46 +46,119 @@ main {
   margin-top: 10vh;
   padding: 0 3.1%;
 }
-.hero{
-    width: 100%;
-    height: 210px;
-    background-size: cover;
-    margin-bottom: 0.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.hero-title{
-    width: 90%;
-    margin: 0.5rem 0;
-}
-.title-top,.hero-title,.article.info{
-    margin-left: 0.6rem;
-}
-.article.info{
-    margin-bottom: 0.5rem;
-}
-.hero .article.info{
-    display: flex;
-    height: fit-content;
-    font-size: 0.75rem;
-    color: lightgray;
-}
-.hero .article.info img{
-    height: 1.1rem;
-    background-color: lightgray;
-}
-.hero-1{
-    background-image: url("./assets/images/nasa.png"); 
-}
-.hero-2{
-    background-image: url("./assets/images/tnw2020-feature_img-02.jpg"); 
+
+.hero {
+  width: 100%;
+  height: 210px;
+  background-size: cover;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.hero-3{
-    background-image: url("./assets/images/GitHub-featured-796x428.jpg"); 
+.hero-title {
+  width: 90%;
+  margin: 0.5rem 0;
 }
 
-.social-link img{
-    width: 1rem;
+.title-top,
+.hero-title,
+.article.info {
+  margin-left: 0.6rem;
+}
+
+.article.info {
+  margin-bottom: 0.5rem;
+}
+
+.hero .article.info {
+  display: flex;
+  height: fit-content;
+  font-size: 0.75rem;
+  color: lightgray;
+}
+
+.itme-img-container img {
+  object-fit: cover;
+}
+
+.social-link img {
+  width: 1rem;
+}
+
+.hero .article.info img {
+  height: 1.1rem;
+  background-color: lightgray;
+}
+
+.hero-1 {
+  background-image: url("./assets/images/nasa.png");
+}
+
+.hero-2 {
+  background-image: url("./assets/images/tnw2020-feature_img-02.jpg");
+}
+
+.hero-3 {
+  background-image: url("./assets/images/GitHub-featured-796x428.jpg");
+}
+
+.header-link {
+  color: orangered;
+}
+
+.latest-news-list {
+  list-style: none;
+}
+
+.latest-item {
+  display: flex;
+}
+
+.item-text {
+  width: 80%;
+}
+
+.itme-img-container {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.topic-1 {
+  background-image: url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
+}
+
+.topic-2 {
+  background-image: url("./assets/images/Snag_760793-523x270.png");
+}
+
+.topic-3 {
+  background-image: url("./assets/images/header-image-Apple-Watch-design-368x276.png");
+}
+
+.topic-4 {
+  background-image: url("./assets/images/1-18-368x276.jpg");
+}
+
+.topic-5 {
+  background-image: url("./assets/images/Untitled-design-13-368x276.jpg");
+}
+
+.topic-6 {
+  background-image: url("./assets/images/mixed-reality-spatial-computing-gq-368x276.png");
+}
+
+.topic-7 {
+  background-image: url("./assets/images/tesla-nhtsa-investigation-car-cooling-pipes-fix-broken-la-times-business-insider-368x276.jpg");
+}
+
+.topic-8 {
+  background-image: url("./assets/images/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg");
+}
+
+.topic-9 {
+  background-image: url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
 }
