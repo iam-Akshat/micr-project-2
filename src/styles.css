@@ -80,7 +80,9 @@ main {
 }
 
 .itme-img-container img {
-  object-fit: cover;
+  object-fit: fill;
+  height: 75px;
+  width: 75px;
 }
 
 .social-link img {
@@ -93,38 +95,44 @@ main {
 }
 
 .hero-1 {
-  background-image: url("./assets/images/nasa.png");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/nasa.png") ;
 }
 
 .hero-2 {
-  background-image: url("./assets/images/tnw2020-feature_img-02.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/tnw2020-feature_img-02.jpg");
 }
 
 .hero-3 {
-  background-image: url("./assets/images/GitHub-featured-796x428.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/GitHub-featured-796x428.jpg");
 }
 
 .header-link {
   color: #F42;
 }
-
+.latest-news header{
+  margin: 0.75rem 0rem;
+}
 .latest-news-list {
   list-style: none;
 }
 
 .latest-item {
   display: flex;
+  margin-bottom: 0.5rem;
 }
-
+.latest-item .text-info small{
+  color: rgb(194, 188, 188);
+}
 .item-text {
   width: 80%;
 }
 
 .itme-img-container {
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   background-color: black;
   overflow: hidden;
+  margin-right: 0.5rem;
 }
 .topics-container{
     padding: 0.5rem 0.65rem;
@@ -134,39 +142,39 @@ main {
     margin: 0.8rem 0;
 }
 .topic-1 {
-  background-image: url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
 }
 
 .topic-2 {
-  background-image: url("./assets/images/Snag_760793-523x270.png");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/Snag_760793-523x270.png");
 }
 
 .topic-3 {
-  background-image: url("./assets/images/header-image-Apple-Watch-design-368x276.png");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/header-image-Apple-Watch-design-368x276.png");
 }
 
 .topic-4 {
-  background-image: url("./assets/images/1-18-368x276.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/1-18-368x276.jpg");
 }
 
 .topic-5 {
-  background-image: url("./assets/images/Untitled-design-13-368x276.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/Untitled-design-13-368x276.jpg");
 }
 
 .topic-6 {
-  background-image: url("./assets/images/mixed-reality-spatial-computing-gq-368x276.png");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/mixed-reality-spatial-computing-gq-368x276.png");
 }
 
 .topic-7 {
-  background-image: url("./assets/images/tesla-nhtsa-investigation-car-cooling-pipes-fix-broken-la-times-business-insider-368x276.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/tesla-nhtsa-investigation-car-cooling-pipes-fix-broken-la-times-business-insider-368x276.jpg");
 }
 
 .topic-8 {
-  background-image: url("./assets/images/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg");
 }
 
 .topic-9 {
-  background-image: url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
 }
 .deals-list{
   list-style: none;
@@ -176,6 +184,9 @@ main {
 }
 .funding-rounds .links-list ul{
   list-style: none;
+}
+.links-list ul li{
+  margin: 0.5rem 0;
 }
 .company-card{
   height: 250px;
@@ -354,4 +365,7 @@ height:  60%;
 img[src="./assets/images/stackpath.svg"]{
   width: 3rem;
 }
-
+.grey-striked{
+  text-decoration: line-through;
+  color: rgb(204, 204, 204);
+}
