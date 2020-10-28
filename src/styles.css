@@ -138,7 +138,7 @@ main {
   color: #f42;
 }
 
-.latest-news header {
+.latest-news header,.latest-deals header {
   margin: 0.75rem 0;
 }
 
@@ -458,6 +458,13 @@ img[src="./assets/images/stackpath.svg"] {
   }
 }
 
-@media-only screen and (min-width: 1024px) {
-
+@media only screen and (min-width: 1024px) {
+  .news-list-item,.deal-li-item{
+    flex-basis: 23.5%;
+    margin-right: 0.75rem;
+  }
+  .itme-img-container{
+    width: 100%;
+    height:  30vh;
+  }
 }
