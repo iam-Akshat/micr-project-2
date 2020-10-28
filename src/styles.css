@@ -214,13 +214,41 @@ height:  60%;
 }
 .card-info,.bank-info{
   background-color: #FFFAF8;
+  padding: 0.75rem 1rem; 
 }
+
+.bank-info {
+  border-top: 0.5px solid rgb(252, 124, 101);
+}
+
 .card-info a{
   color: #333;
+  font-size: 0.8rem;
 }
-.bank-info{
+
+.bank-info a {
+  color: #333;
+  font-weight: 300;
+}
+
+.bank-info li{
   list-style: none;
+  color: rgb(187, 180, 180);
+  font-size: 0.8rem;
 }
+
+.bank-info li a {
+  line-height: 1.25rem;
+}
+
+.funding-info-tag a:hover {
+  color: black;
+}
+
+.funding-info-tag img{
+  width: 0.8rem;
+}
+
 .special-item{
     display: flex;
     flex-direction: row-reverse;
