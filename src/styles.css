@@ -129,7 +129,7 @@ main {
 .topics-container{
     padding: 0.5rem 0.65rem;
 }
-.topic a h2{
+.topic a h2,.funding-rounds h2 a,.links-list li a{
     color: #f42;
     margin: 0.8rem 0;
 }
@@ -169,6 +169,56 @@ main {
   background-image: url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
 }
 .deals-list{
+  list-style: none;
+}
+.funding-rounds{
+  padding: 0.5rem 0.65rem;
+}
+.funding-rounds .links-list ul{
+  list-style: none;
+}
+.company-card{
+  height: 250px;
+  margin: 1rem 0;
+}
+.company-card header{
+  height: 35%;
+  background:linear-gradient(to bottom,#f42 0%,#f42 40%,#ffebe7 41%,#ffebe7 100%);
+}
+.company-logo{
+  margin: 0.75rem 1rem;
+  float: left;
+}
+.company-logo img{
+  height: 50px;
+  width: 50px;
+}
+.orange-bg{
+  height: 40%;
+  font-size: 1.2rem;
+  color: #ffebe7;
+}
+.salmon-bg{
+height:  60%;
+}
+.orange-bg,.salmon-bg{
+  padding: 0.5rem 1rem;
+}
+.header-text-container{
+  height: 100%;
+}
+.grey-small{
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.card-info,.bank-info{
+  background-color: #FFFAF8;
+}
+.card-info a{
+  color: #333;
+}
+.bank-info{
   list-style: none;
 }
 .special-item{
@@ -246,7 +296,7 @@ main {
 }
 
 .menu-links a {
-  color: gray;
+  color: rgb(238, 235, 235);
   font-size: 0.7rem;
   padding-right: 0.75rem;
 }
