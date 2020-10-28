@@ -152,7 +152,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.latest-item .text-info small {
+.latest-item .text-info small:first {
   color: rgb(194, 188, 188);
 }
 
@@ -413,13 +413,16 @@ img[src="./assets/images/stackpath.svg"] {
     grid-template-columns: 70% 30%;
     grid-template-rows: 1fr 1fr;
     gap: 10px 10px;
-    grid-template-areas: "hero-1 hero-2" "hero-1 hero-3";
+    grid-template-areas: "hero-1 hero-2"
+                         "hero-1 hero-3";
   }
 
   .hero-articles-container .hero {
     height: 100%;
   }
-
+  .hero-title{
+    font-size: 1.2rem;
+  }
   .hero-1 {
     grid-area: hero-1;
   }
@@ -518,5 +521,8 @@ img[src="./assets/images/stackpath.svg"] {
 
   .topic {
     width: 27vw;
+  }
+  .hero-title{
+    font-size: 1.5rem;
   }
 }
