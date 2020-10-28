@@ -405,3 +405,33 @@ img[src="./assets/images/stackpath.svg"] {
   text-decoration: line-through;
   color: rgb(204, 204, 204);
 }
+
+@media (min-width: 768px) {
+  .hero-articles-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "hero-1 hero-2" "hero-1 hero-3";
+  }
+
+  .hero-articles-container .hero {
+    height: 100%;
+  }
+
+  .hero-1 {
+    grid-area: hero-1;
+  }
+
+  .hero-2 {
+    grid-area: hero-2;
+  }
+
+  .hero-3 {
+    grid-area: hero-3;
+  }
+}
+
+@media-only screen and (min-width: 1024px) {
+
+}
