@@ -86,7 +86,34 @@ main {
 }
 
 .social-link img {
-  width: 1rem;
+  width: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.company-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.funding-info-tag img {
+  width: 0.8rem;
+}
+
+.special-item img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.bottom-footer-container img {
+  width: 1.5rem;
+}
+
+.social-link img:hover {
+  background-color: #333;
 }
 
 .hero .article.info img {
@@ -95,23 +122,25 @@ main {
 }
 
 .hero-1 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/nasa.png") ;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/nasa.png");
 }
 
 .hero-2 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/tnw2020-feature_img-02.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/tnw2020-feature_img-02.jpg");
 }
 
 .hero-3 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/GitHub-featured-796x428.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/GitHub-featured-796x428.jpg");
 }
 
 .header-link {
-  color: #F42;
+  color: #f42;
 }
-.latest-news header{
-  margin: 0.75rem 0rem;
+
+.latest-news header {
+  margin: 0.75rem 0;
 }
+
 .latest-news-list {
   list-style: none;
 }
@@ -120,9 +149,11 @@ main {
   display: flex;
   margin-bottom: 0.5rem;
 }
-.latest-item .text-info small{
+
+.latest-item .text-info small {
   color: rgb(194, 188, 188);
 }
+
 .item-text {
   width: 80%;
 }
@@ -134,107 +165,9 @@ main {
   overflow: hidden;
   margin-right: 0.5rem;
 }
-.topics-container{
-    padding: 0.5rem 0.65rem;
-}
-.topic a h2,.funding-rounds h2 a,.links-list li a{
-    color: #f42;
-    margin: 0.8rem 0;
-}
-.topic-1 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
-}
 
-.topic-2 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/Snag_760793-523x270.png");
-}
-
-.topic-3 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/header-image-Apple-Watch-design-368x276.png");
-}
-
-.topic-4 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/1-18-368x276.jpg");
-}
-
-.topic-5 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/Untitled-design-13-368x276.jpg");
-}
-
-.topic-6 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/mixed-reality-spatial-computing-gq-368x276.png");
-}
-
-.topic-7 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/tesla-nhtsa-investigation-car-cooling-pipes-fix-broken-la-times-business-insider-368x276.jpg");
-}
-
-.topic-8 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg");
-}
-
-.topic-9 {
-  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.26) 0%,rgba(0,0,0,0.4) 56%, rgba(0,0,0,0.85) 100%),url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
-}
-.deals-list{
-  list-style: none;
-}
-.funding-rounds{
+.topics-container {
   padding: 0.5rem 0.65rem;
-}
-.funding-rounds .links-list ul{
-  list-style: none;
-}
-.links-list ul li{
-  margin: 0.5rem 0;
-}
-.company-card{
-  height: 250px;
-  margin: 1rem 0;
-}
-.company-card header{
-  height: 35%;
-  background:linear-gradient(to bottom,#f42 0%,#f42 40%,#ffebe7 41%,#ffebe7 100%);
-}
-.company-logo{
-  margin: 0.75rem 1rem;
-  float: left;
-}
-.company-logo img{
-  height: 50px;
-  width: 50px;
-}
-.orange-bg{
-  height: 40%;
-  font-size: 1.2rem;
-  color: #ffebe7;
-}
-.salmon-bg{
-height:  60%;
-}
-.orange-bg,.salmon-bg{
-  padding: 0.5rem 1rem;
-}
-.header-text-container{
-  height: 100%;
-}
-.grey-small{
-  color: rgb(179, 179, 179);
-  font-weight: 400;
-  font-size: 0.7rem;
-}
-.card-info,.bank-info{
-  background-color: #FFFAF8;
-  padding: 0.75rem 1rem; 
-}
-
-.bank-info {
-  border-top: 0.5px solid rgb(252, 124, 101);
-}
-
-.card-info a{
-  color: #333;
-  font-size: 0.8rem;
 }
 
 .bank-info a {
@@ -242,10 +175,140 @@ height:  60%;
   font-weight: 300;
 }
 
-.bank-info li{
+.bank-info li {
   list-style: none;
   color: rgb(187, 180, 180);
   font-size: 0.8rem;
+}
+
+.card-info a {
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.special-item a {
+  color: #f42;
+  font-weight: 600;
+}
+
+.normal-link a {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.menu-links a {
+  color: rgb(238, 235, 235);
+  font-size: 0.7rem;
+  padding-right: 0.75rem;
+}
+
+.topic a h2,
+.funding-rounds h2 a,
+.links-list li a {
+  color: #f42;
+  margin: 0.8rem 0;
+}
+
+.topic-1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
+}
+
+.topic-2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/Snag_760793-523x270.png");
+}
+
+.topic-3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/header-image-Apple-Watch-design-368x276.png");
+}
+
+.topic-4 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/1-18-368x276.jpg");
+}
+
+.topic-5 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/Untitled-design-13-368x276.jpg");
+}
+
+.topic-6 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/mixed-reality-spatial-computing-gq-368x276.png");
+}
+
+.topic-7 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/tesla-nhtsa-investigation-car-cooling-pipes-fix-broken-la-times-business-insider-368x276.jpg");
+}
+
+.topic-8 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg");
+}
+
+.topic-9 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%), url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
+}
+
+.deals-list {
+  list-style: none;
+}
+
+.funding-rounds {
+  padding: 0.5rem 0.65rem;
+}
+
+.funding-rounds .links-list ul {
+  list-style: none;
+}
+
+.links-list ul li {
+  margin: 0.5rem 0;
+}
+
+.company-card {
+  height: 250px;
+  margin: 1rem 0;
+}
+
+.company-card header {
+  height: 35%;
+  background: linear-gradient(to bottom, #f42 0%, #f42 40%, #ffebe7 41%, #ffebe7 100%);
+}
+
+.company-logo {
+  margin: 0.75rem 1rem;
+  float: left;
+}
+
+.orange-bg {
+  height: 40%;
+  font-size: 1.2rem;
+  color: #ffebe7;
+}
+
+.salmon-bg {
+  height: 60%;
+}
+
+.orange-bg,
+.salmon-bg {
+  padding: 0.5rem 1rem;
+}
+
+.header-text-container {
+  height: 100%;
+}
+
+.grey-small {
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.card-info,
+.bank-info {
+  background-color: #fffaf8;
+  padding: 0.75rem 1rem;
+}
+
+.bank-info {
+  border-top: 0.5px solid rgb(252, 124, 101);
 }
 
 .bank-info li a {
@@ -256,42 +319,29 @@ height:  60%;
   color: black;
 }
 
-.funding-info-tag img{
-  width: 0.8rem;
+.special-item {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #fff4f2;
+  color: #f42;
+  margin-bottom: 0.7rem;
 }
 
-.special-item{
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: #FFF4F2;
-    color: #F42;
-    margin-bottom: 0.7rem;
+.special-item header {
+  padding: 0.5rem 0.7rem;
 }
-.special-item header{
-    padding: 0.5rem 0.7rem;
+
+.special-item h4 {
+  font-weight: 500;
 }
-.special-item img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
+
+.normal-link {
+  padding: 0.2rem 0.3rem;
 }
-.special-item h4{
-    font-weight: 500;
-}
-.special-item a{
-    color: #F42;
-    font-weight: 600;
-}
-.normal-link{
-    padding: 0.2rem 0.3rem;
-}
-.normal-link::marker{
-    content: "•";
-    color: #f42;
-} 
-.normal-link a{
-    font-size: 0.9rem;
-    color: #333;
+
+.normal-link::marker {
+  content: "•";
+  color: #f42;
 }
 
 .main-footer {
@@ -299,12 +349,12 @@ height:  60%;
   flex-direction: column;
 }
 
-.top-footer{
-    background-color:#131313;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 0;
+.top-footer {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
 }
 
 .social-links {
@@ -314,16 +364,6 @@ height:  60%;
   margin: 0 auto;
 }
 
-.social-link img{
-  width: 2rem;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: white;
-  border: 1px solid white;
-}
-.social-link img:hover{
-  background-color: #333;
-}
 .social-link {
   margin: 0 0.2rem;
 }
@@ -334,20 +374,16 @@ height:  60%;
   padding-top: 1rem;
 }
 
-.menu-links a {
-  color: rgb(238, 235, 235);
-  font-size: 0.7rem;
-  padding-right: 0.75rem;
-}
-.menu-link a:hover{
+.menu-link a:hover {
   color: antiquewhite;
 }
-.bottom-footer{
-    display: flex;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    padding: 2rem 0;
+
+.bottom-footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 2rem 0;
 }
 
 .bottom-footer-container {
@@ -359,13 +395,12 @@ height:  60%;
   margin: 0 auto;
   color: gray;
 }
-.bottom-footer-container img{
-  width: 1.5rem;
-}
-img[src="./assets/images/stackpath.svg"]{
+
+img[src="./assets/images/stackpath.svg"] {
   width: 3rem;
 }
-.grey-striked{
+
+.grey-striked {
   text-decoration: line-through;
   color: rgb(204, 204, 204);
 }
