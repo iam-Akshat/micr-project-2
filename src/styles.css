@@ -168,6 +168,9 @@ main {
 .topic-9 {
   background-image: url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
 }
+.deals-list{
+  list-style: none;
+}
 .special-item{
     display: flex;
     flex-direction: row-reverse;
@@ -212,15 +215,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 }
 
 .social-links {
   display: flex;
   list-style: none;
-  width: 60%;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .social-link img{
@@ -228,10 +230,13 @@ main {
   padding: 0.5rem;
   border-radius: 50%;
   background-color: white;
+  border: 1px solid white;
 }
-
+.social-link img:hover{
+  background-color: #333;
+}
 .social-link {
-  
+  margin: 0 0.2rem;
 }
 
 .menu-links {
@@ -245,19 +250,30 @@ main {
   font-size: 0.7rem;
   padding-right: 0.75rem;
 }
-
+.menu-link a:hover{
+  color: antiquewhite;
+}
 .bottom-footer{
-    display; flex;
+    display: flex;
     background-color: black;
     color: white;
-    font-size: 0.7rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    font-size: 1rem;
+    padding: 2rem 0;
 }
 
 .bottom-footer-container {
   display: flex;
-  width: 30%;
+  flex-direction: column;
+  width: 80%;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: gray;
+}
+.bottom-footer-container img{
+  width: 1.5rem;
+}
+img[src="./assets/images/stackpath.svg"]{
+  width: 3rem;
 }
 
