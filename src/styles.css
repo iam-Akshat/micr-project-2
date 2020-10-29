@@ -585,7 +585,7 @@ img[src="./assets/images/stackpath.svg"] {
   .news-list-item,
   .deal-li-item {
     flex-basis: 30%;
-    margin-right: 0.75rem;
+    margin: 0 0.375rem;
   }
 
   .latest-item {
@@ -631,12 +631,11 @@ img[src="./assets/images/stackpath.svg"] {
   .topics-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .topic {
     margin-right: 1rem;
-    width: 43vw;
+    width: 42vw;
   }
 
   .topic .hero {
@@ -656,16 +655,15 @@ img[src="./assets/images/stackpath.svg"] {
   .news-list-item,
   .deal-li-item {
     flex-basis: 23.5%;
-    margin-right: 0.75rem;
+    margin: 0 0.375rem;
   }
 
   .itme-img-container {
     width: 90%;
-    height: 20vh;
   }
 
   .topic {
-    width: 27vw;
+    flex: 1 30%;
   }
 
   .hero-title {
@@ -704,10 +702,4 @@ img[src="./assets/images/stackpath.svg"] {
     cursor: pointer;
     opacity: 0.6;
   }
-
-  /* .main-article-gradient {
-    background-image: url("./assets/images/cover-gradient.png");
-    position: relative;
-    z-index: -1;
-  } */
 }
