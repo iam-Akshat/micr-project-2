@@ -101,7 +101,7 @@ main {
 
 .hero .article.info {
   display: flex;
-  height: fit-content;
+  height: min-content;
   font-size: 0.75rem;
   color: lightgray;
 }
