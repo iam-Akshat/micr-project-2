@@ -1,10 +1,26 @@
+@font-face {
+  font-family: 'avalon-bold';
+  src: url('./assets/fonts/avalon-bold.woff')
+}
+
+@font-face {
+  font-family: 'shentox-medium';
+  src: url('./assets/fonts/shentox-medium.woff2')
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'shentox-medium', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'avalon-bold', sans-serif;
 }
 
 a {
+  font-family: 'shentox-medium', sans-serif;
   text-decoration: none;
   color: white;
 }
