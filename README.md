@@ -2,7 +2,7 @@
 
 # The Next Web Clone
 
-> One paragraph statement about the project.
+> This is a clone of thenextweb.com built with HTML & CSS with a mobile first approach.
 
 ![screenshot](./app_screenshot.png)
 
