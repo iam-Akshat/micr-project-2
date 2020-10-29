@@ -599,4 +599,16 @@ img[src="./assets/images/stackpath.svg"] {
   .hero-title{
     font-size: 1.5rem;
   }
+
+  .main-article-logo {
+    width: 70%;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 20vh;
+  }
+
+  .main-article-gradient {
+    background-image: url("./assets/images/cover-gradient.png");
+    position: relative;
+    z-index: -1;
+  }
 }
