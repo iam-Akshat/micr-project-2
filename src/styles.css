@@ -407,7 +407,33 @@ img[src="./assets/images/stackpath.svg"] {
   color: rgb(204, 204, 204);
 }
 
+.nav-link-container, .light-nav {
+  display: none;
+}
+
 @media (min-width: 768px) {
+
+  .nav-menu img[alt="menu-button"] {
+    display: none;
+  }
+
+  .nav-menu img[alt="search-button"] {
+    display: none;
+  }
+
+  .top-nav {
+    height: ;
+  }
+
+
+
+  .nav-link-container {
+    display: flex;
+    background-color: black;
+    height: 2rem;
+    width: 100%;
+  }
+
   .hero-articles-container {
     display: grid;
     grid-template-columns: 70% 30%;
