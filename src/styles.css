@@ -604,11 +604,34 @@ img[src="./assets/images/stackpath.svg"] {
     width: 70%;
     padding: 0.25rem 0.75rem;
     margin-bottom: 20vh;
+    position: relative;
+    z-index: 500;
   }
-
-  .main-article-gradient {
+  .hero-1{
+    position: relative;
+  }
+  .hero-1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image:  url("./assets/images/cover-gradient.png");
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+    transition: 0.1s opacity linear;
+  }
+  .hero-1:hover::after{
+    cursor: pointer;
+    opacity: 0.6;
+  }
+ 
+  /* .main-article-gradient {
     background-image: url("./assets/images/cover-gradient.png");
     position: relative;
     z-index: -1;
-  }
+  } */
 }
