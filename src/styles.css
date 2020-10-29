@@ -412,18 +412,66 @@ img[src="./assets/images/stackpath.svg"] {
 }
 
 @media (min-width: 768px) {
-
+  .nav-menu{
+    width: 100%;
+    justify-content: space-between;
+  }
   .nav-menu img[alt="menu-button"] {
     display: none;
   }
-
-  .nav-menu img[alt="search-button"] {
-    display: none;
+  .light-nav{
+    padding: 0.25rem 0.5rem;
+    width: 50%;
+  }
+  .light-nav ul li a{
+    font-size: 0.85rem;
+  }
+  .light-nav ul li{
+    margin: 0 0.25rem;
+  }
+  .light-nav ul{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .light-nav{
+    display: block;
+  }
+ .dark-nav{
+    height: 1.5rem;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    padding: 0.25rem;
+    justify-content: space-around;
+  }
+  .dark-nav li a{
+    font-size: 0.7rem;
+  }
+  .top-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+  }
+  .light-nav ul,.dark-nav ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+  .right-menu,.left-menu{
+    display: flex;
+    align-items: center;
+  }
+  .right-menu{
+    flex-direction: row-reverse;
+  }
+  .dark-nav li a {
+    padding: 0.25rem 0.75rem;
+  }
+  .light-nav li  a {
+    color: grey;
   }
 
-  .top-nav {
-    height: ;
-  }
 
 
 
