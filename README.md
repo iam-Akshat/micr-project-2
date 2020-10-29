@@ -17,7 +17,7 @@ Fully responsive clone
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://iam-akshat.github.io/micr-project-2/src/index.html)
 
 
 
