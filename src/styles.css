@@ -172,7 +172,7 @@ main {
   margin-right: 0.5rem;
 }
 
-.topics-container {
+.topics-container,.latest-news,.latest-deals {
   padding: 0.5rem 0.65rem;
 }
 
@@ -574,6 +574,7 @@ img[src="./assets/images/stackpath.svg"] {
   .topics-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .topic {
@@ -615,9 +616,10 @@ img[src="./assets/images/stackpath.svg"] {
   }
 
   .main-article-logo {
+    display: block;
     width: 70%;
     padding: 0.25rem 0.75rem;
-    margin-bottom: 20vh;
+    margin-bottom: 20%;
     position: relative;
     z-index: 500;
   }
