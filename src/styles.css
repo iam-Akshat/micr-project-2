@@ -37,6 +37,10 @@ a {
   align-items: center;
 }
 
+.main-article-logo {
+  display: none;
+}
+
 .nav-buttons {
   padding: 0.25rem;
   width: 1.75rem;
@@ -407,7 +411,7 @@ img[src="./assets/images/stackpath.svg"] {
   color: rgb(204, 204, 204);
 }
 
-.nav-link-container, .light-nav {
+.dark-nav, .light-nav {
   display: none;
 }
 
@@ -421,10 +425,10 @@ img[src="./assets/images/stackpath.svg"] {
   }
   .light-nav{
     padding: 0.25rem 0.5rem;
-    width: 50%;
+    width: 80%;
   }
   .light-nav ul li a{
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
   .light-nav ul li{
     margin: 0 0.25rem;
@@ -472,14 +476,15 @@ img[src="./assets/images/stackpath.svg"] {
     color: grey;
   }
 
-
-
-
   .nav-link-container {
     display: flex;
     background-color: black;
     height: 2rem;
     width: 100%;
+  }
+
+  .main {
+    margin-top: 2vh;
   }
 
   .hero-articles-container {
@@ -582,6 +587,15 @@ img[src="./assets/images/stackpath.svg"] {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .light-nav {
+    width: 65%;
+  }
+
+  .light-nav ul li a {
+    font-size: 0.9rem;
+  }
+
   .news-list-item,
   .deal-li-item {
     flex-basis: 23.5%;
