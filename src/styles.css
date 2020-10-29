@@ -76,6 +76,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-position: center;
 }
 
 .hero-title {
@@ -432,6 +433,17 @@ img[src="./assets/images/stackpath.svg"] {
 }
 
 @media (min-width: 768px) {
+  main{
+    padding: 0 2rem;
+  }
+  img[alt="search-button"]{
+    margin-right: 1.5rem;
+  }
+  .funding-header{
+    display: flex;
+    width:95% ;
+    justify-content: space-between;
+  }
   .nav-menu{
     width: 100%;
     justify-content: space-between;
@@ -458,12 +470,12 @@ img[src="./assets/images/stackpath.svg"] {
     display: block;
   }
  .dark-nav{
-    height: 1.5rem;
+    height: 1.9rem;
     width: 100%;
     display: flex;
     background-color: black;
     padding: 0.25rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .dark-nav li a{
     font-size: 0.7rem;
@@ -481,12 +493,17 @@ img[src="./assets/images/stackpath.svg"] {
   .right-menu,.left-menu{
     display: flex;
     align-items: center;
+    width: 50%;
+  }
+  
+  .left-menu:last-child{
+    flex-basis: content;
   }
   .right-menu{
     flex-direction: row-reverse;
   }
   .dark-nav li a {
-    padding: 0.25rem 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
   .light-nav li  a {
     color: grey;
@@ -577,14 +594,14 @@ img[src="./assets/images/stackpath.svg"] {
 
   .links-list ul {
     display: flex;
-    width: 45%;
+    width: max-content;
     justify-content: space-between;
     align-items: center;
   }
 
   .links-list li {
     border-right: 1px solid #f42;
-    padding-right: 2rem;
+    padding: 0 1rem;
   }
 
   .topics-container {
