@@ -1,0 +1,737 @@
+@font-face {
+  font-family: 'avalon-bold';
+  src: url('./assets/fonts/avalon-bold.woff');
+}
+
+@font-face {
+  font-family: 'shentox-medium';
+  src: url('./assets/fonts/shentox-medium.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'shentox-medium', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'avalon-bold', sans-serif;
+}
+
+a {
+  font-family: 'shentox-medium', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+// varaiables//
+$main-orange:#f42;
+$dark-overlay:linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, rgba(0, 0, 0, 0.4) 56%, rgba(0, 0, 0, 0.85) 100%);
+// mixins //
+@mixin normal-flex {
+  display: flex;
+}
+
+@mixin flex-with-dir($dir) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+.logo {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: black;
+  width: 6rem;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 8vh;
+
+  @include normal-flex;
+
+  justify-content: space-between;
+  z-index: 99999;
+}
+
+.nav-menu {
+  width: 25%;
+  height: 8vh;
+
+  @include normal-flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-article-logo {
+  display: none;
+}
+
+.nav-buttons {
+  padding: 0.25rem;
+  width: 1.75rem;
+}
+
+main {
+  margin-top: 10vh;
+  padding: 0 3.1%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 210px;
+  height: 50vw;
+  background-size: cover;
+  margin-bottom: 0.75rem;
+
+  @include flex-with-dir(column);
+
+  justify-content: flex-end;
+  background-position: center;
+}
+
+.hero-title {
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
+.title-top,
+.hero-title,
+.article.info {
+  margin-left: 0.6rem;
+}
+
+.article.info {
+  margin-bottom: 0.5rem;
+}
+
+.hero .article.info {
+  @include normal-flex;
+
+  height: min-content;
+  font-size: 0.75rem;
+  color: lightgray;
+}
+
+.itme-img-container img {
+  object-fit: fill;
+  height: 75px;
+  width: 75px;
+}
+
+.social-link img {
+  width: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.company-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.funding-info-tag img {
+  width: 0.8rem;
+}
+
+.special-item img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.bottom-footer-container img {
+  width: 1.5rem;
+}
+
+.social-link img:hover {
+  background-color: #333;
+}
+
+.hero .article.info img {
+  height: 1.1rem;
+  background-color: lightgray;
+}
+
+.hero-1 {
+  background-image: $dark-overlay, url("./assets/images/nasa.png");
+}
+
+.hero-2 {
+  background-image: $dark-overlay, url("./assets/images/tnw2020-feature_img-02.jpg");
+}
+
+.hero-3 {
+  background-image: $dark-overlay, url("./assets/images/GitHub-featured-796x428.jpg");
+}
+
+.header-link {
+  color: $main-orange;
+}
+
+.latest-news header,
+.latest-deals header {
+  margin: 0.75rem 0;
+}
+
+.latest-news-list {
+  list-style: none;
+}
+
+.latest-item {
+  @include normal-flex;
+
+  margin-bottom: 0.5rem;
+
+  .itme-img-container {
+    height: 75px;
+    width: 75px;
+    background-color: black;
+    overflow: hidden;
+    margin-right: 0.5rem;
+  }
+
+  .item-text {
+    width: 80%;
+
+    .text-info small:first-of-type {
+      color: rgb(194, 188, 188);
+    }
+  }
+}
+
+.topics-container,
+.latest-news,
+.latest-deals {
+  padding: 0.5rem 0.65rem;
+}
+
+.bank-info a {
+  color: #333;
+  font-weight: 300;
+}
+
+.bank-info li {
+  list-style: none;
+  color: rgb(187, 180, 180);
+  font-size: 0.8rem;
+}
+
+.card-info a {
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.special-item a {
+  color: $main-orange;
+  font-weight: 600;
+}
+
+.normal-link a {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.menu-links a {
+  color: rgb(238, 235, 235);
+  font-size: 0.7rem;
+  padding-right: 0.75rem;
+}
+
+.topic a h2,
+.funding-rounds h2 a,
+.links-list li a {
+  color: $main-orange;
+  margin: 0.8rem 0;
+}
+
+.topic-1 {
+  background-image: $dark-overlay, url("./assets/images/Elon-Musk-candy-Wonka-hed-513x270.jpg");
+}
+
+.topic-2 {
+  background-image: $dark-overlay, url("./assets/images/Snag_760793-523x270.png");
+}
+
+.topic-3 {
+  background-image: $dark-overlay, url("./assets/images/header-image-Apple-Watch-design-368x276.png");
+}
+
+.topic-4 {
+  background-image: $dark-overlay, url("./assets/images/1-18-368x276.jpg");
+}
+
+.topic-5 {
+  background-image: $dark-overlay, url("./assets/images/Untitled-design-13-368x276.jpg");
+}
+
+.topic-6 {
+  background-image: $dark-overlay, url("./assets/images/mixed-reality-spatial-computing-gq-368x276.png");
+}
+
+.topic-7 {
+  background-image: $dark-overlay, url("./assets/images/tesla-nhtsa-investigation-car-cooling-pipes-fix-broken-la-times-business-insider-368x276.jpg");
+}
+
+.topic-8 {
+  background-image: $dark-overlay, url("./assets/images/hummer-ev-future-car-love-hate-next-gmc-gm-ultium-368x276.jpg");
+}
+
+.topic-9 {
+  background-image: $dark-overlay, url("./assets/images/reddit-deleted-posts-comments-threads-368x276.jpg");
+}
+
+.deals-list {
+  list-style: none;
+}
+
+.funding-rounds {
+  padding: 0.5rem 0.65rem;
+}
+
+.funding-rounds .links-list ul {
+  list-style: none;
+}
+
+.links-list ul li {
+  margin: 0.5rem 0;
+}
+
+.company-card {
+  height: 250px;
+  margin: 1rem 0;
+}
+
+.company-card header {
+  height: 35%;
+  background: linear-gradient(to bottom, $main-orange 0%, $main-orange 40%, #ffebe7 41%, #ffebe7 100%);
+}
+
+.company-logo {
+  margin: 0.75rem 1rem;
+  float: left;
+}
+
+.orange-bg {
+  height: 40%;
+  font-size: 1.2rem;
+  color: #ffebe7;
+}
+
+.salmon-bg {
+  height: 60%;
+}
+
+.orange-bg,
+.salmon-bg {
+  padding: 0.5rem 1rem;
+}
+
+.header-text-container {
+  height: 100%;
+}
+
+.grey-small {
+  color: rgb(179, 179, 179);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.card-info,
+.bank-info {
+  background-color: #fffaf8;
+  padding: 0.75rem 1rem;
+}
+
+.bank-info {
+  border-top: 0.5px solid rgb(252, 124, 101);
+}
+
+.bank-info li a {
+  line-height: 1.25rem;
+}
+
+.funding-info-tag a:hover {
+  color: black;
+}
+
+.special-item {
+  @include flex-with-dir(row-reverse);
+
+  flex-direction: row-reverse;
+  background-color: #fff4f2;
+  color: $main-orange;
+  margin-bottom: 0.7rem;
+}
+
+.special-item header {
+  padding: 0.5rem 0.7rem;
+}
+
+.special-item h4 {
+  font-weight: 500;
+}
+
+.normal-link {
+  padding: 0.2rem 0.3rem;
+}
+
+.normal-link::marker {
+  content: "•";
+  color: $main-orange;
+}
+
+.main-footer {
+  @include flex-with-dir(column);
+}
+
+.top-footer {
+  background-color: #131313;
+
+  @include flex-with-dir(column);
+
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.social-links {
+  @include normal-flex;
+
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social-link {
+  margin: 0 0.2rem;
+}
+
+.menu-links {
+  @include normal-flex;
+
+  list-style: none;
+  padding-top: 1rem;
+}
+
+.menu-link a:hover {
+  color: antiquewhite;
+}
+
+.bottom-footer {
+  @include normal-flex;
+
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.bottom-footer-container {
+  @include flex-with-dir(column);
+
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: gray;
+}
+
+img[src="./assets/images/stackpath.svg"] {
+  width: 3rem;
+}
+
+.grey-striked {
+  text-decoration: line-through;
+  color: rgb(204, 204, 204);
+}
+
+.dark-nav,
+.light-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 2rem;
+  }
+
+  img[alt="search-button"] {
+    margin-right: 1.5rem;
+  }
+
+  .funding-header {
+    @include normal-flex;
+
+    width: 95%;
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-menu img[alt="menu-button"] {
+    display: none;
+  }
+
+  .dark-nav {
+    height: 1.9rem;
+    width: 100%;
+
+    @include normal-flex;
+
+    background-color: black;
+    padding: 0.25rem;
+    justify-content: space-evenly;
+
+    li a {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  .light-nav {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    width: 80%;
+
+    ul {
+      width: 10%;
+
+      @include normal-flex;
+
+      justify-content: space-around;
+
+      li {
+        margin: 0 0.25rem;
+
+        a {
+          color: grey;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  .dark-nav .links-list li {
+    border-right: 1px solid $main-orange;
+    padding: 0 1rem;
+  }
+
+  .top-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+  }
+
+  .light-nav ul,
+  .dark-nav ul {
+    @include normal-flex;
+
+    list-style: none;
+    width: 100%;
+  }
+
+  .right-menu,
+  .left-menu {
+    @include normal-flex;
+
+    align-items: center;
+    width: 50%;
+  }
+
+  .left-menu:last-child {
+    flex-basis: content;
+  }
+
+  .right-menu {
+    flex-direction: row-reverse;
+  }
+
+  .nav-link-container {
+    @include normal-flex;
+
+    background-color: black;
+    height: 2rem;
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 2vh;
+  }
+
+  .hero-articles-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "hero-1 hero-2"
+      "hero-1 hero-3";
+  }
+
+  .hero-articles-container .hero {
+    height: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.2rem;
+  }
+
+  .hero-1 {
+    grid-area: hero-1;
+  }
+
+  .hero-2 {
+    grid-area: hero-2;
+  }
+
+  .hero-3 {
+    grid-area: hero-3;
+  }
+
+  .latest-news-list,
+  .deals-list {
+    @include normal-flex;
+
+    flex-wrap: wrap;
+  }
+
+  .news-list-item,
+  .deal-li-item {
+    flex-basis: 30%;
+    margin: 0 0.375rem;
+  }
+
+  .latest-item {
+    flex-direction: column;
+  }
+
+  .itme-img-container {
+    width: 100%;
+    height: 15vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .item-text {
+      width: 100%;
+      margin-top: 0.65rem;
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .company-card-container {
+    @include normal-flex;
+
+    width: 90vw;
+
+    .company-card {
+      margin-right: 1rem;
+      flex-basis: 33%;
+    }
+  }
+
+  .links-list ul {
+    @include normal-flex;
+
+    width: max-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topics-container {
+    @include normal-flex;
+
+    flex-wrap: wrap;
+
+    .topic {
+      margin-right: 1rem;
+      width: 42vw;
+
+      .hero {
+        height: 26vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .light-nav {
+    width: 65%;
+
+    ul li a {
+      font-size: 0.9rem;
+    }
+  }
+
+  .news-list-item,
+  .deal-li-item {
+    flex-basis: 23.5%;
+    margin: 0 0.375rem;
+  }
+
+  .itme-img-container {
+    width: 90%;
+  }
+
+  .topic {
+    flex: 1 30%;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .main-article-logo {
+    display: block;
+    width: 70%;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 20%;
+    position: relative;
+    z-index: 500;
+  }
+
+  .hero-1 {
+    position: relative;
+  }
+
+  .hero-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: url("./assets/images/cover-gradient.png");
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+    transition: 0.1s opacity linear;
+  }
+
+  .hero-1:hover::after {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
